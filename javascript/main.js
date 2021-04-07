@@ -174,46 +174,49 @@ function isRghit5() {
 
 
     }
+    lastQuestion();
 }
 
+function lastQuestion(){
 
-let i =0;
+    let i =0;
 
-while(i<6){
-    q5 = prompt("what is the name of ross wives ? ");
-
-    for (let index = 0; index < question.length; index++) {
-        if(q5==question[index]){
-            alert("Hello " + namee + " your guess is right  ");
-            mark++;
-            i = 6;
-            break;
-        }
-        
+    while(i<6){
+        q5 = prompt("what is the name of ross wives ? ");
+    
+        for (let index = 0; index < question.length; index++) {
+            if(q5==question[index]){
+                alert("Hello " + namee + " your guess is right  ");
+                mark++;
+                i = 6;
+                break;
+            }
             
-        
-        
+                
+            
+            
+        }
+        i++;
+    
     }
-    i++;
-
+    
+    console.log("Hello " + namee + " your right answer 7/" + mark);
+    
+    alert("Hello " + namee + " your right answer 7/" + mark);
+    
+    if (score != 0) {
+    
+        console.log("Hello " + namee + " your wrnog guess    4/" + score);
+    
+        alert("Hello " + namee + " your wrnog guess    4/" + score);
+    
+    } else {
+    
+        console.log("Hello " + namee + " excellent job you do it from the first time");
+    
+        alert("Hello " + namee + " excellent job you do it from the first time");
+    }
+    
+    
+    document.write("<h3>Hello " + namee + "!</h1><p>Have a nice day!</p>");
 }
-
-console.log("Hello " + namee + " your right answer 7/" + mark);
-
-alert("Hello " + namee + " your right answer 7/" + mark);
-
-if (score != 0) {
-
-    console.log("Hello " + namee + " your wrnog guess    4/" + score);
-
-    alert("Hello " + namee + " your wrnog guess    4/" + score);
-
-} else {
-
-    console.log("Hello " + namee + " excellent job you do it from the first time");
-
-    alert("Hello " + namee + " excellent job you do it from the first time");
-}
-
-
-document.write("<h3>Hello " + namee + "!</h1><p>Have a nice day!</p>");
